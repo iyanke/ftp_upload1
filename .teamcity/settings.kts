@@ -77,11 +77,12 @@ object Build1 : BuildType({
         ftpUpload {
             targetUrl = "ftp://172.31.131.24:22"
             securityMode = FTPUpload.SecurityMode.NONE
-            authMethod = anonymous()
+            authMethod = usernameAndPassword {
+                username = "jetbrains"
+                password = "credentialsJSON:3a18efca-ee26-4fc5-ab03-1ba28a703208"
+            }
             transferMode = FTPUpload.TransferMode.ASCII
             sourcePath = "11.png"
-            param("jetbrains.buildServer.deployer.username", "jetbrains")
-            param("secure:jetbrains.buildServer.deployer.password", "credentialsJSON:3a18efca-ee26-4fc5-ab03-1ba28a703208")
         }
     }
 
