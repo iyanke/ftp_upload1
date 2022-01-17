@@ -60,7 +60,7 @@ object Build : BuildType({
             transferMode = FTPUpload.TransferMode.AUTO
             sourcePath = """
                 12.png
-                adnroid/**
+                adnroid1
             """.trimIndent()
         }
     }
