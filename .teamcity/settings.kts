@@ -26,7 +26,7 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 'Debug' option is available in the context menu for the task.
 */
 
-version = "2021.1"
+version = "2021.2"
 
 project {
 
@@ -48,7 +48,8 @@ object Build : BuildType({
     steps {
         ftpUpload {
             targetUrl = "ftp://172.31.131.24:22"
-            securityMode = FTPUpload.SecurityMode.NONE
+            securityMode = FTPUpload.SecurityMode.FTPS
+            dataChannelProtection = FTPUpload.DataChannelProtectionMode.DISABLE
             authMethod = usernameAndPassword {
                 username = "jetbrains"
                 password = "credentialsJSON:3a18efca-ee26-4fc5-ab03-1ba28a703208"
