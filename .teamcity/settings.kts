@@ -55,7 +55,7 @@ object Build : BuildType({
                 password = "credentialsJSON:3a18efca-ee26-4fc5-ab03-1ba28a703208"
             }
             transferMode = FTPUpload.TransferMode.AUTO
-            sourcePath = "12.png"
+            sourcePath = "12.png =>%build.number%/**"
         }
     }
 
