@@ -39,7 +39,10 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = "12.png"
+    artifactRules = """
+        12.png
+        android => android
+    """.trimIndent()
 
     vcs {
         root(HttpsGithubComIyankeBigdataRefsHeadsMaster)
