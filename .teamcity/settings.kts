@@ -48,7 +48,7 @@ object Build : BuildType({
     steps {
         ftpUpload {
             targetUrl = "ftp://172.31.131.24:22"
-            securityMode = FTPUpload.SecurityMode.FTPES
+            securityMode = FTPUpload.SecurityMode.NONE
             dataChannelProtection = FTPUpload.DataChannelProtectionMode.DISABLE
             authMethod = usernameAndPassword {
                 username = "jetbrains"
