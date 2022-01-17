@@ -41,7 +41,7 @@ object Build : BuildType({
 
     artifactRules = """
         12.png
-        android/** => android
+        android/** => android1
     """.trimIndent()
 
     vcs {
