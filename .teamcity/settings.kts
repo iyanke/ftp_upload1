@@ -39,7 +39,7 @@ project {
 object Build : BuildType({
     name = "Build"
 
-    artifactRules = "12.png =>%build.number%"
+    artifactRules = "12.png =>%build.number%/**"
 
     vcs {
         root(HttpsGithubComIyankeBigdataRefsHeadsMaster)
